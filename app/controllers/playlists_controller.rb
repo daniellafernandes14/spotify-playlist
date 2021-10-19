@@ -3,7 +3,7 @@ class PlaylistsController < ApplicationController
   before_action :find_playlist, only: [:show, :edit, :update, :destroy]
 
   def index
-    Playlist.all = @playlists
+    @playlists = Playlist.all
   end
 
   def show
