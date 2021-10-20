@@ -5,7 +5,7 @@ const Playlists = () => {
   const[playlists, setPlaylists] = useState([])
 
   useEffect(()=>{
-    axios.get('<api url e.g. /api/v1/airlines.json>')
+    axios.get('../../db/seeds.rb')
     .then( resp => console.log(resp) )
     .catch( resp => console.log(resp) )
   }, [playlists.length])
