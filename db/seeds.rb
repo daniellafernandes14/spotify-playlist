@@ -15,12 +15,3 @@ require 'json'
 #     composition.update(spotify_id: id)
 #   end
 # end
-
-auth = {"Authorization": "Bearer BQBvdU9MaOlGslXPKbNFcf9Vw4G-DzZIMS6BketrsL0sDptu1VIVBqUn7m_IWHK4lPkFXpgUxtiSoS74zjhbDe0v8k2SmRmWmHHIircpsmEMwer1ipM-ixr1L0gZynf9jiSNkVZH5cPCvh_-JWGi1nxSo0nYp5kNQmq"}
-
-endpoint1 = RestClient.get(
-  'https://api.spotify.com/v1/browse/categories/mood/playlists?offset=0&limit=50',
-  headers=auth
-)
-
-data1 = JSON.parse(endpoint1)
